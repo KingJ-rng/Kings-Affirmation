@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kings Affirmation | High-End Infrastructure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>KINGS AFFIRMATION</h1></header>
+    
+    <main>
+        <section id="hero">
+            <h2>Stop Losing Customers to Manual Friction.</h2>
+            <p>I build automated, high-conversion web infrastructure that turns "inquiries" into "completed orders" instantly.</p>
+            <button onclick="document.getElementById('form-section').scrollIntoView()">View My Systems</button>
+        </section>
+
+        <section id="form-section">
+            <h3>Apply for Infrastructure Partnership</h3>
+            <form id="enquiryForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="surname" placeholder="Surname" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <button type="button" onclick="submitForm()">Submit Enquiry</button>
+            </form>
+            <div id="contact-btns" class="hidden">
+                <a href="https://wa.me/27672816583?text=Hi Israfeel, I saw your webpage and I'm interested in you creating me one for my business" target="_blank"><button>Connect via WhatsApp</button></a>
+                <a href="mailto:israfeel.bass@gmail.com?subject=Web Design Enquiry&body=Hi Israfeel, I saw your webpage and I'm interested in you creating me one for my business"><button>Connect via Email</button></a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="admin-trigger" onclick="adminLogin()">Settings</footer>
+    
+    <!-- Admin Portal -->
+    <div id="admin-panel" class="hidden">
+        <h2>Admin Ghost Interface</h2>
+        <div id="leads-list"></div>
+        <button onclick="location.reload()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
